@@ -1,0 +1,59 @@
+body{
+  -webkit-transition: all 0.9s ease-in-out;
+}
+body, p, h1, h2, h3, h4, h5, a, i, span {
+  font-family: segoe ui;
+  font-weight: 300;
+}
+a, a:hover{
+  color: black;
+  font-weight: 500;
+}
+.big{
+    font-size: 120px;
+}
+.big-text{
+    margin-top: 10%;
+}
+.big-text p{
+    font-size: 600%;
+}
+.btn-big
+{
+  padding: 0.5rem 2.5rem;
+  font-size: 1.25rem;
+  line-height: 2;
+  border-radius: 0.3rem;
+}
+
+.center-all{
+    text-align: center;
+    align-items: center;
+}
+#categorias i:hover{
+    color: #ff784f;
+}
+/*capa*/
+.capa, .capa-sobre {
+	padding-top: 100px;
+    padding-bottom: 30px;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.capa-sobre {
+    min-height: 400px;
+}
+footer {
+  color:white;
+}
+.navbar .nav-link
+{
+   font-weight: 300;
+}
+/*transicao*/
+.transicao{
+  -webkit-transition: all 0.9s ease-in-out;
+}
