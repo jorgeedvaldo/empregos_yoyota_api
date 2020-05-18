@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/categories', 'Api\CategoryController@get');
+Route::get('/categories/{id}', 'Api\CategoryController@getById');
+
+Route::get('/jobs', 'Api\JobController@get');
+Route::get('/jobs/{id}', 'Api\JobController@getById');

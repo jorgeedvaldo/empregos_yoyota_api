@@ -5,13 +5,13 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use App\Models\Category;
+use App\Models\Job;
 
-class CategoryController extends Controller
+class JobController extends Controller
 {
     public function get()
     {
-        $data = Category::with('jobs')->get();
+        $data = Job::with('categories')->get();
         $license = 'This API was developed by Edivaldo Jorge (https://github.com/jorgeedvaldo)';
         $message = 'Operation performed successfully.';
         return response()->json(
@@ -24,7 +24,7 @@ class CategoryController extends Controller
 
     public function getById($id)
     {
-        $data = Category::with('jobs')->where('id', $id)->get();
+        $data = Job::with('categories')->where('id', $id)->get();
         $license = 'This API was developed by Edivaldo Jorge (https://github.com/jorgeedvaldo)';
         $message = 'Operation performed successfully.';
         return response()->json(
