@@ -11,6 +11,6 @@ class CategoryController extends Controller
 {
     public function get()
     {
-        return Category::all();
+        return Category::get();
     }
 }
