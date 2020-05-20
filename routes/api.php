@@ -19,3 +19,5 @@ Route::get('/categories/{id}', 'Api\CategoryController@getById');
 
 Route::get('/jobs', 'Api\JobController@get');
 Route::get('/jobs/{id}', 'Api\JobController@getById');
+
+Route::post('/message', 'Api\MessageController@create');
