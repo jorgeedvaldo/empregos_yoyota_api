@@ -10,5 +10,26 @@
                     <a href="{{ url('/categories/' . $item['id']) }}" class = "nav-link">{{ $item['name'] }}</a>
                 @endforeach
     		</div>
-		</div></div></div>
+        </div>
+
+        <div class="col-md-8 p-0 ml-3">
+
+            @foreach($jobs as $job)
+
+                <div class="media border p-3 mb-4 bg-white">
+                    <div class="media-body">
+                    <h5 class="mt-0 font-weight-normal">{{ $job['title'] }}</h5>
+                        <span>Empresa: {{ $job['company'] }}</span><br />
+                        <i class="fa fa-map-marker"></i> <span>{{ $job['province'] }}</span><br />
+                        <span>Expira em: {{ $job['expiration_date'] }}</span>
+                        <a href="{{ url('/jobs/' . $job['id']) }}" class = "btn btn-dark btn-block mt-3">Ver Detalhes</a>
+                    </div>
+                </div>
+
+            @endforeach
+
+        </div>
+
+    </div>
+</div>
 @endsection('content')
