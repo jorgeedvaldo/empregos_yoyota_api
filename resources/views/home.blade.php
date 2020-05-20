@@ -1,4 +1,4 @@
-@extends('template.app');
+@extends('template.app')
 
 @section('content')
     <section class="capa mb-5" style="background-image: url('{{ asset('assets/images/bg_1.jpg') }}');">
