@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class MessageController extends Controller
 {
-    public function create()
+    public function create(Request $request)
     {
 
     }
