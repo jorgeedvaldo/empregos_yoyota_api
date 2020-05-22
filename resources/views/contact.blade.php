@@ -32,7 +32,7 @@
                     <div class="col-md-6">
                         <div class="md-form mb-4">
                             <label for="name" class="">Seu nome</label>
-                            <input type="text" id="name" name="name" class="form-control">
+                            <input type="text" id="name" name="name" class="form-control" required>
                         </div>
                     </div>
                     <!--Grid column-->
@@ -41,7 +41,7 @@
                     <div class="col-md-6">
                         <div class="md-form mb-4">
                             <label for="email" class="">Email</label>
-                            <input type="text" id="email" name="email" class="form-control">
+                            <input type="email" id="email" name="email" class="form-control" required>
                         </div>
                     </div>
                     <!--Grid column-->
@@ -68,7 +68,7 @@
 
                         <div class="md-form mb-4">
                             <label for="message">Sua mensagem</label>
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" required></textarea>
                         </div>
 
                     </div>
