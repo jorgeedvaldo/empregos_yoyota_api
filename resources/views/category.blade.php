@@ -15,7 +15,7 @@
 
         <div class="col-md-8 p-0 ml-3">
 
-            @foreach($jobs as $job)
+            @foreach($categoryJobs as $job)
 
                 <div class="media border p-3 mb-4 bg-white">
                     <div class="media-body">

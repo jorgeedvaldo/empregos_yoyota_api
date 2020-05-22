@@ -43,6 +43,9 @@
             <div class="row">
               <div class="col-lg-12">
                 <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="{{ url('/jobs') }}" >Todos</a>
+                    <li>
                     @foreach($categories as $item)
                         <li>
                             <a href="{{ url('/categories/' . $item['id']) }}">{{ $item['name'] }}</a>
