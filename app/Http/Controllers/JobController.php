@@ -17,8 +17,8 @@ class JobController extends Controller
 
     public function getById($id)
     {
-        $job = Job::with('categories')->where('id', $id)->get();
+        $job = Job::with('categories')->where('id', $id)->get()->first();
         $categories = Category::get();
-        return view('jobs', compact('job', 'categories'));
+        return view('job', compact('job', 'categories'));
     }
 }
