@@ -13,7 +13,7 @@
       <h1 class="mt-4">{{$job['title']}}</h1>
 
         <!-- Date/Time -->
-        <p>Publicado em: {{$job['publication_date']}}</p>
+        <p>Publicado em: {{ date_format(new DateTime($job['publication_date']), 'd-m-Y') }}</p>
 
         <hr>
 
@@ -28,7 +28,7 @@
 
         <p>Empresa: {{$job['company']}}</p>
         <p>E-mail para a candidatura: {{$job['email']}} </p>
-        <p>Oportunidade válida até: {{$job['expiration_date']}}</p>
+        <p>Oportunidade válida até: {{date_format(new DateTime($job['expiration_date']), 'd-m-Y')}}</p>
         <hr>
 
       </div>
