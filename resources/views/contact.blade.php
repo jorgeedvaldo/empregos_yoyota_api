@@ -23,7 +23,8 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        <form id="contact-form" name="contact-form" action="{{url('contact')}}" method="POST">
+            @csrf
 
                 <!--Grid row-->
                 <div class="row">
@@ -32,7 +33,7 @@
                     <div class="col-md-6">
                         <div class="md-form mb-4">
                             <label for="name" class="">Seu nome</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
+                            <input type="text" id="author" name="author" class="form-control">
                         </div>
                     </div>
                     <!--Grid column-->
@@ -68,7 +69,7 @@
 
                         <div class="md-form mb-4">
                             <label for="message">Sua mensagem</label>
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" required></textarea>
+                            <textarea type="text" id="content" name="content" rows="2" class="form-control md-textarea" required></textarea>
                         </div>
 
                     </div>
