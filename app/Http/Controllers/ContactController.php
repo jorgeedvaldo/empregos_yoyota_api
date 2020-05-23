@@ -3,27 +3,29 @@
 namespace App\Http\Controllers;
 
 use App\Models\Message;
-use App\Http\Requests\ContactRequest;
+use App\Http\Requests\MessageRequest;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function index(ContactRequest $request)
+    public function index()
     {
-        $isCreate = false;
-        if(!($request->author == null))
-        {
-            Message::create(
-                [
-                    'author' => $request->author,
-                    'email' => $request->email,
-                    'subject' => $request->subject,
-                    'content' => $request->content
-                ]
-                );
-            $isCreate = true;
-        }
+        return view('contact');
+    }
 
-        return view('contact', compact('isCreate'));
+    public function store(MessageRequest $request)
+    {
+        $isCreate =  Message::create(
+            [
+                'author' => $request->author,
+                'email' => $request->email,
+                'subject' => $request->subject,
+                'content' => $request->content
+            ]
+        );
+        if($isCreate)
+        {
+            return redirect('contact');
+        }
     }
 }
