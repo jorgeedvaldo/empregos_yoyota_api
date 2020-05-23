@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index');
 Route::get('/about', 'AboutController@index');
 Route::get('/categories/{id}', 'JobController@getByCategoryId');
-//Route::match(['get','post'], '/contact', 'ContactController@index');
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact/save', 'ContactController@store');
 Route::get('/jobs', 'JobController@index');
