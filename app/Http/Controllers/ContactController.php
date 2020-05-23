@@ -25,7 +25,8 @@ class ContactController extends Controller
         );
         if($isCreate)
         {
-            return redirect('contact');
+            $isSaved = true;
+            return view('contact', compact('isSaved'));
         }
     }
 }

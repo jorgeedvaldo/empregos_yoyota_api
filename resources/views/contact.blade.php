@@ -29,6 +29,11 @@
                 <!--Grid row-->
                 <div class="row">
 
+                    @if(isset($isSaved))
+                        <div class="col-md-12">
+                            <div class="alert alert-success mt-3 mb-3">A sua mensagem foi enviada com sucesso.</div>
+                        </div>
+                    @endif
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-4">
