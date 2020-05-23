@@ -24,6 +24,6 @@ class ContactController extends Controller
             $isCreate = true;
         }
 
-        //return view('contact', compact('isCreate'));
+        return view('contact', compact('isCreate'));
     }
 }
