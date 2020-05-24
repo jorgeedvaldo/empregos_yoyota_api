@@ -15,8 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 Route::get('/about', 'AboutController@index');
-Route::get('/categories/{id}', 'JobController@getByCategoryId');
+
+Route::get('/categories/{id}', 'JobController@getByCategoryId')
+    ->where('id', '[0-9]+');
+
 Route::get('/contact', 'ContactController@index');
 Route::match(['GET','POST'],'/contact/save', 'ContactController@store');
 Route::get('/jobs', 'JobController@index');
-Route::get('/jobs/{id}', 'JobController@getById');
+
+Route::get('/jobs/{id}', 'JobController@getById')
+    ->where('id', '[0-9]+');;
