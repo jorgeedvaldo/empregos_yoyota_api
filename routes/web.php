@@ -17,6 +17,6 @@ Route::get('/', 'HomeController@index');
 Route::get('/about', 'AboutController@index');
 Route::get('/categories/{id}', 'JobController@getByCategoryId');
 Route::get('/contact', 'ContactController@index');
-Route::post('/contact/save', 'ContactController@store');
+Route::match(['GET','POST'],'/contact/save', 'ContactController@store');
 Route::get('/jobs', 'JobController@index');
 Route::get('/jobs/{id}', 'JobController@getById');
