@@ -11,8 +11,8 @@ class JobController extends Controller
 {
     public function index()
     {
-        $jobs = Job::get();
-        $categories = Category::get();
+        $jobs = Job::orderByRaw('id DESC')->get();
+        $categories = Category::orderBy('name')->get();
         return view('jobs', compact('jobs', 'categories'));
     }
 
@@ -21,7 +21,7 @@ class JobController extends Controller
         try
         {
             $job = Job::with('categories')->where('id', $id)->get()[0];
-            $categories = Category::get();
+            $categories = Category::orderBy('name')->get();
             return view('job', compact('job', 'categories'));
         }
         catch(Exception $ex)
@@ -34,7 +34,7 @@ class JobController extends Controller
     {
         try
         {
-            $categories = Category::get();
+            $categories = Category::orderBy('name')->get();
             $category = Category::with('jobs')->where('id', $id)->first();
             $categoryJobs = $category->jobs;
             return view('category', compact('category', 'categoryJobs', 'categories'));
