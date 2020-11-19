@@ -1,5 +1,5 @@
 @extends('template.app')
-
+@section('description', $job['title'])
 @section('content')
 <!-- Page Content -->
 <div class="container">

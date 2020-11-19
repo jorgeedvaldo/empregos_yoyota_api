@@ -5,10 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{env('APP_NAME')}}</title>
-        <meta name="description" content="Encontre empregos no solo angolano." />
+        <meta name="description" content="@yield('description')" />
         <meta name="keywords" content="emprego, job, recrutamento, angola" />
-        <meta name="autor" content="Name: Edivaldo Jorge" />
-
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"/>
