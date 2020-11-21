@@ -8,6 +8,10 @@
         <meta name="description" content="@yield('description')" />
         <meta name="keywords" content="emprego, job, recrutamento, angola" />
 
+        <!-- Open Graph / Facebook -->
+		<meta property="og:title" content="@yield('description')">
+		<meta property="og:description" content="@yield('description')">
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"/>
 
@@ -51,6 +55,7 @@
                 <div class="col-md-3 col-lg-6 col-xl-3 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Empregos Yoyota</h6>
                     <p>Aqui você encontra o seu emprego ideal.</p>
+                    <p>Não recrutamos ninguém, as Vagas aqui anunciadas pertencem aos anunciantes.</p>
                 </div>
 
                 <hr class="w-100 clearfix d-md-none">
