@@ -28,7 +28,7 @@
 
         <p>Empresa: {{$job['company']}}</p>
         <p>E-mail ou link de candidatura: {{$job['email']}} </p>
-        <p>Oportunidade válida até: {{date_format(new DateTime($job['expiration_date']), 'd-m-Y')}}</p>
+        <!-- <p>Oportunidade válida até: {{date_format(new DateTime($job['expiration_date']), 'd-m-Y')}}</p> -->
         <hr>
 
       </div>
