@@ -11,7 +11,7 @@ class JobController extends Controller
 {
     public function index()
     {
-        $jobs = Job::orderByRaw('id DESC')->get();
+        $jobs = Job::orderByRaw('id DESC')->paginate(15);
         $categories = Category::orderBy('name')->get();
         return view('jobs', compact('jobs', 'categories'));
     }
