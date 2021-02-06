@@ -49,6 +49,17 @@ a, a:hover{
 footer {
   color:white;
 }
+.list-group-item:hover
+{
+    background-color: #343a40;
+    color: white;
+}
+
+.list-group-item:hover a
+{
+    color: white;
+}
+
 .navbar .nav-link
 {
    font-weight: 300;

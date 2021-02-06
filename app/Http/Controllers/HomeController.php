@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Job;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('home');
+        $jobs = Job::orderByRaw('id DESC')->paginate(3);
+        return view('home', compact('jobs'));
     }
 }

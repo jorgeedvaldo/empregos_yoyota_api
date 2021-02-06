@@ -23,27 +23,25 @@
 
     <body>
         <div id="app">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
-            <div class="container">
-                <a class="navbar-band" href="{{ url('/') }}"><img src="{{ asset('assets/images/logo.png') }}"></a>
-                <div class="navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="{{ url('/') }}" class = "nav-link">INÍCIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ url('/about') }}" class = "nav-link">SOBRE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ url('/jobs') }}" class = "nav-link">EMPREGOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ url('/contact') }}" class = "nav-link">CONTACTOS</a>
-                    </li>
-                    </ul>
+            <!-- ======= Navbar Section ======= -->
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container">
+                    <a class="navbar-band" href="{{ url('/') }}"><img src="{{ asset('assets/images/logo.png') }}"></a>
+                    <div class="navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item">
+                                <a href="{{ url('/') }}" class = "nav-link"><i class="fa fa-home"></i> Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ url('/about') }}" class = "nav-link"><i class="fa fa-info-circle"></i> Sobre</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link active rounded-pill" href="{{ url('/jobs') }}">Oportunidades</a>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            </nav>
+            </nav><!-- End Navbar -->
 
             @yield('content')
 

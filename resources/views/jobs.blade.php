@@ -14,20 +14,20 @@
         </div>
 
         <div class="col-md-8 p-0 ml-3">
+            <div class="list-group">
+                @foreach($jobs as $job)
 
-            @foreach($jobs as $job)
+                    <a href="{{ url('/jobs/' . $job['id']) }}" class="list-group-item list-group-item-action mb-3">
+                        <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1"><b>{{ $job['title'] }}</b></h5>
+                        <small>Publicado em: {{ date_format(new DateTime($job['publication_date']), 'd-m-Y') }}</small>
+                        </div>
+                        <p class="mb-1">Empresa: {{ $job['company'] }}</p>
+                        <small><i class="fa fa-map-marker"></i> Localização: <span>{{ $job['province'] }}</span></small>
+                    </a>
 
-                <div class="media border p-3 mb-4 bg-white">
-                    <div class="media-body">
-                    <h5 class="mt-0 font-weight-normal">{{ $job['title'] }}</h5>
-                        <span>Empresa: {{ $job['company'] }}</span><br />
-                        <i class="fa fa-map-marker"></i> <span>{{ $job['province'] }}</span><br />
-                        <span>Expira em: {{ $job['expiration_date'] }}</span>
-                        <a href="{{ url('/jobs/' . $job['id']) }}" class = "btn btn-dark btn-block mt-3">Ver Detalhes</a>
-                    </div>
-                </div>
-
-            @endforeach
+                @endforeach
+            </div>
             {{ $jobs->links() }}
         </div>
 
