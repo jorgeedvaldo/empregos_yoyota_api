@@ -53,21 +53,19 @@
                 <div class="col-md-3 col-lg-6 col-xl-3 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Empregos Yoyota</h6>
                     <p>Aqui você encontra o seu emprego ideal.</p>
-                    <p>Não recrutamos ninguém, as Vagas aqui anunciadas pertencem aos anunciantes.</p>
+                    <p>Não recrutamos ninguém, as vagas aqui anunciadas pertencem aos anunciantes.</p>
                 </div>
 
                 <hr class="w-100 clearfix d-md-none">
 
                 <div class="col-md-4 col-lg-6 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Contactar</h6>
-                    <p>
-                    <i class="fa fa-envelope mr-3"></i>geral@empregosyoyota.com</p>
-                    <p>
-                    <i class="fa fa-phone mr-3"></i>+ 244 997 123 456</p>
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Redes Sociais</h6>
                     <p>
                     <i class="fa fa-facebook mr-3"></i> <a href="http://facebook.com/empregosyoyota">Empregos Yoyota</a></p>
                     <p>
                     <i class="fa fa-instagram mr-3"></i><a href="http://instagram.com/empregosyoyota">empregosyoyota</a></p>
+                    <p>
+                    <i class="fa fa-linkedin mr-3"></i><a href="http://linkedin.com/company/empregosyoyota">Empregos Yoyota</a></p>
                 </div>
                 </div> <!--row-->
             </div><!--container-->
